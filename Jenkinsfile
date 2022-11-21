@@ -3,12 +3,16 @@ pipeline
   agent any
   stages
   {
-    stage('hello')
-    {script
+    stage("requirements")
     {
-      echo "abc"
-      sh "demo.sh"
-    }
+      steps
+      {
+        script
+        {
+          echo "abc"
+          sh "demo.sh"
+        }
+      }
     }
   }
 }
