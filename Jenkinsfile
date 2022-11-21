@@ -10,7 +10,11 @@ pipeline
         script
         {
           echo "abc"
-          bat "demo.sh abhi"
+          echo "Stage: Build number: $BUILD_NUMBER"
+
+          bat ("echo Shell: Build number: $BUILD_NUMBER")
+
+          bat ("demo.sh")
         }
       }
     }
