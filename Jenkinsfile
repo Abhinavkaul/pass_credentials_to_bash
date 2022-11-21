@@ -9,8 +9,12 @@ pipeline
       {
         script
         {
+          withCredentials([usernamePassword(credentialsId: 'rought_delete_it', passwordVariable: 'Pass', usernameVariable: 'Abhi')]) 
+          {
           echo "abc"
-          bat ("demo.sh")
+          echo "this is variable '$Abhi'"
+            echo "this is password '$Pass'"
+          }
         }
       }
     }
