@@ -1,4 +1,4 @@
 user=$1
-pass=$2
+pass=$3
 echo "$user"
 echo "$pass"
