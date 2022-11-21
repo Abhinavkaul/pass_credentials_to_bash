@@ -3,10 +3,12 @@ pipeline
   agent any
   stages
   {
-    stage(hello)
+    stage('hello')
+    {script
     {
       echo "abc"
       sh "demo.sh"
+    }
     }
   }
 }
