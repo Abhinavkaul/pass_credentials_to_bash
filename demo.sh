@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "$user"
 echo "$pass"
-echo "Script: - Build number: $BUILD_NUMBER"
+echo "this is demo file $BUILD_NUMBER"
