@@ -10,7 +10,7 @@ pipeline
         script
         {
           echo "abc"
-          sh "demo.sh"
+          bat "demo.sh"
         }
       }
     }
