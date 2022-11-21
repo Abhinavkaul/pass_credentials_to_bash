@@ -13,7 +13,6 @@ pipeline
           {
           echo "abc"
           echo "this is variable '$Abhi'"
-            echo "this is password '$Pass'"
           }
         }
       }
