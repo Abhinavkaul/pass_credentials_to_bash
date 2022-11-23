@@ -1,5 +1,5 @@
 def branch = 'main'
-def repoUrl = 'https://bitbucket.example-group.com/scm/xxx/example-app.git'
+def repoUrl = 'https://github.com/Abhinavkaul/pass_credentials_to_bash.git'
 pipeline
 {
   agent any
