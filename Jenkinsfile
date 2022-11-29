@@ -25,7 +25,8 @@ pipeline
         {
           withCredentials([usernamePassword(credentialsId: 'git_credentials', passwordVariable: 'pass', usernameVariable: 'user')]) 
           {
-           //sh "git tag 0.0.6"
+           sh "git tag 0.0.6"
+            echo "hello avi"
             sh "git push https://${user}:${pass}@https://github.com/Abhinavkaul/pass_credentials_to_bash.git --tags"
           }
         }
