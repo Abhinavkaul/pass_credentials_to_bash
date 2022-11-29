@@ -23,13 +23,17 @@ pipeline
       {
         script
         {
-          withCredentials([usernamePassword(credentialsId: 'git_credentials', passwordVariable: 'pass', usernameVariable: 'user')]) 
-          {
+          //withCredentials([usernamePassword(credentialsId: 'git_credentials', passwordVariable: 'pass', usernameVariable: 'user')]) 
+          //{
             bat "git tag -d 0.0.13"
            bat "git tag 0.0.13"
             echo "hello avi"
-            bat "git push origin 0.0.13"
-          }
+          sshagent(['personal_git_ssh']) 
+          {
+            bat "git push --tags"
+           }
+            //bat "git push origin 0.0.13"
+          //}
         }
       }
     }
