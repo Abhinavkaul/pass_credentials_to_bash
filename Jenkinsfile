@@ -28,7 +28,7 @@ pipeline
             bat "git tag -d 0.0.13"
            bat "git tag 0.0.13"
             echo "hello avi"
-            bat "git push https://${user}:${pass}@github.com/Abhinavkaul/pass_credentials_to_bash.git --tags"
+            bat "git push origin 0.0.13"
           }
         }
       }
